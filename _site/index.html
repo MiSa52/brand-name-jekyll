@@ -7,7 +7,7 @@
         <!-- this is where you give extra information to the browser that you don't want to actually show up on the page -->
          <title> Sleep like a baby </title>
         
-         <!-- This is our font awesome icons-->
+         <!-- This is our font awesome icons -->
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
  
          <!-- Gridlex for our flexbox grids -->
@@ -18,6 +18,9 @@
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
           <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap" rel="stylesheet" />
  
+         <!-- Animate on scroll -->
+         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
          <!-- This is our custom stylesheet-->
          <link rel="stylesheet" href="style.css" />
     </head>
@@ -33,25 +36,40 @@
             <h2> The Sleep Co </h2>
         </a>
     </div>
-    <nav class="col-7_sm-12-middle text-right sm-text-center">
+    <nav class="col-7_sm-12-middle text-right sm-text-center hide-sm">
         <a href="/index.html"> Home </a>
         <a href="/about.html"> About </a>
         <a href="/products.html"> Products </a>
         <a href="/contact.html"> Contact </a>
     </nav>
+
+    <div class="col-1 show-sm">
+        <div class="hamburger-button">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+
 </div>
 
+<nav class="mobile-menu bg-featured padded">
+    <a href="/index.html"> Home </a>
+    <a href="/about.html"> About </a>
+    <a href="/products.html"> Products </a>
+    <a href="/contact.html"> Contact </a>
+</nav>
+
             <div class="col-12 text-center">
-                <h3 class="font-weight-extra-bold editable">
+                <h3 class="font-weight-extra-bold editable" data-aos="fade-in" data-aos-offset="500" data-aos-duration="1000">
                     <span class="featured-text">sleep</span> like a puppy
                 </h3>
-                <h1 class="font-weight-light editable"> the ultimate mattress solution </h1>
+                <h1 class="font-weight-light editable" data-aos="fade-up" data-aos-delay="500"> 
+                    the ultimate mattress solution </h1>
             </div>
         </header>
 
         <!----------------------------- Gallery / about Section ----------------------------->
         <section class="grid">
-            <div class="padded col-6_xs-12-middle">
+            <div class="padded col-6_xs-12-middle" data-aos="fade-right">
                 <h2>
                     build to last a <span class="featured-text"> life time</span>
                 </h2>
@@ -64,7 +82,7 @@
             <div class="bg-image bg-pug col-6_xs-12 tall-70">
                 <!-- background pug sleeping -->
             </div>
-            <div class="padded col-6_xs-12-middle">
+            <div class="padded col-6_xs-12-middle" data-aos="fade-left">
                 <h2>
                     so <span class="featured-text">soft</span> you'll melt
                 </h2>
@@ -74,7 +92,7 @@
         
         <!----------------------------- Featrure icon grid ----------------------------->
         <section class="padded grid bg-dark">
-            <div class="padded-sm col-12 text-center">
+            <div class="padded-sm col-12 text-center" data-aos="fade-in">
                 <h2>
                     <span class="featured-text">feature</span> time you will love
                 </h2>
@@ -108,7 +126,7 @@
         </section>
           
         <!----------------------------- Testimonial section ----------------------------->
-        <section class="padded grid padded-lg">
+        <section class="padded grid padded-lg ">
             <div class="col-1 text-right">
                 <span class="quote-icon">“</span>
             </div>
@@ -142,7 +160,16 @@
                     </p>
                 </div>
             </footer>
+            
+            <!-- Add jQuery -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+            <!-- Animate on scroll -->
+         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
+             <!-- Our custom Javascript file -->
+             <script src="/scripts.js"></script>
+
         </body>
 
     </html>
